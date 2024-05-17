@@ -1,0 +1,46 @@
+import { Level } from './level.interface';
+
+export interface UserInfo {
+  user_identifier: string;
+  enable_limit_msg: boolean;
+  enable_market_msg: boolean;
+  enable_oco_msg: boolean;
+  enable_stop_limit_msg: boolean;
+  is_chart: boolean;
+  is_classic: boolean;
+  is_english_number: boolean;
+  is_light: boolean;
+  is_vertical: boolean;
+  phone: string;
+  todos: any[];
+  last_login_time: string;
+  state: string;
+  is_phone_confirmed: boolean;
+  is_email_confirmed: boolean;
+  first_name: string;
+  last_name: string;
+  fullname: string;
+  birth_date_text: string;
+  sex: string;
+  home_phone: string;
+  address: string;
+  email: string;
+  two_factor_auth_enabled: boolean;
+  two_factor_auth_type: string;
+  level: Level;
+  company_name: string;
+  type: string;
+  review_step: number;
+  accepted_step: number;
+  level_score: number;
+  daily_withdraw: number;
+  daily_deposit: number;
+  monthly_withdraw: number;
+  remaining_daily_withdraw: number;
+  remaining_daily_deposit: number;
+  remaining_monthly_withdraw: number;
+  announcement: any;
+  accepted_step_4_temp: boolean;
+  accepted_step_5_temp: boolean;
+  tetherban: boolean;
+}
