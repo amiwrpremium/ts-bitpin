@@ -1,6 +1,6 @@
 {
   "name": "ts-bitpin",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Unofficial BitPin SDK for Node.js.",
   "author": {
     "name": "Amir Mahdi Erfani",

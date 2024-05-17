@@ -5,7 +5,7 @@
  * The enums define a set of named constants that can be used throughout the application.
  * The interfaces define the shape of the objects used in the application, ensuring type safety.
  *
- * @version 0.1.0
+ * @version 1.0.0
  * @package ts-bitpin
  * @module src/index
  */
