@@ -1,0 +1,8 @@
+.gitignore
+node_modules
+.idea
+lib
+dist
+.eslintrc.js
+.prettierrc
+diff.txt
