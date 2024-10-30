@@ -34,7 +34,7 @@ npm install # or yarn
 ### Import
 
 ```typescript
-import {Client} from 'ts-bitpin';
+import { Client } from 'ts-bitpin';
 ```
 
 ### Create a Client
@@ -57,7 +57,7 @@ const client = new Client({
 #### Async factory
 
 ```typescript
-const client = await Client.create({
+const client = await Client.Create({
   apiKey: 'YOUR_API_KEY',
   secretKey: 'YOUR_SECRET_KEY',
 });
@@ -74,8 +74,6 @@ This project is provided as is and is not affiliated with Bitpin in any way and 
 ## Documentation
 
 The documentation for this project can be found [here](https://amiwrpremium.github.io/ts-bitpin/).
-
-Also you can find 
 
 ## Versioning
 
