@@ -1,0 +1,25 @@
+{
+  "name": "ts-bit24",
+  "gitRevision": "HEAD",
+  "readme": "./README.md",
+  "out": "docs",
+  "gitRemote": "origin",
+  "entryPoints": [
+    "src/index.ts"
+  ],
+  "entryPointStrategy": "expand",
+  "plugin": [
+    "typedoc-material-theme"
+  ],
+  "theme": "default",
+  "hideGenerator": true,
+  "includeVersion": true,
+  "searchInComments": true,
+  "validation": {
+    "invalidLink": true,
+    "notExported": true,
+    "notDocumented": true
+  },
+  "cleanOutputDir": true,
+  "themeColor": "#1d4ed8"
+}
