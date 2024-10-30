@@ -69,7 +69,7 @@ export class Client {
    * @type {string}
    * @default 'https://api.bitpin.{tld}'
    */
-  public baseUrl: string = 'https://api.bitpin.{tld}';
+  public baseUrl: string = 'https://api.bitpin.{tld}/api';
 
   /**
    * The API version to use.
@@ -651,7 +651,7 @@ export class Client {
    * const openOrders = await client.getOpenOrders();
    * console.log(openOrders);
    */
-  public async getOpenOrders(
+  public async getUserOrders(
     params?: t.IGetOpenOrdersParams,
     kwargs?: t.IRequestOptions,
   ): Promise<t.IOrderStatusResponse[]> {
@@ -770,7 +770,7 @@ export class Client {
    * Cancels multiple orders in bulk.
    *
    * @public
-   * @param {t.IBulkCancelOrdersParams[]} params - An array of parameters for canceling the orders.
+   * @param {t.IBulkCancelOrdersParams} params - An array of parameters for canceling the orders.
    * @param {t.IRequestOptions} [kwargs] - Additional request options.
    * @returns {Promise<t.IBulkCancelOrdersResponse>} A promise that resolves to the bulk cancel order response.
    *
@@ -779,7 +779,7 @@ export class Client {
    * console.log(response);
    */
   public async bulkCancelOrders(
-    params: t.IBulkCancelOrdersParams[],
+    params: t.IBulkCancelOrdersParams,
     kwargs?: t.IRequestOptions,
   ): Promise<t.IBulkCancelOrdersResponse> {
     return await this.post<t.IBulkCancelOrdersResponse>(
