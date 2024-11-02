@@ -38,6 +38,7 @@ import { IPagination } from '../others';
  *
  * @example
  * const order: ICreateOrder = {
+ *   id: 535179385,
  *   symbol: "PIXFI_IRT",
  *   type: "limit",
  *   side: "sell",
@@ -57,6 +58,7 @@ import { IPagination } from '../others';
  * };
  */
 export interface IOrderStatusResponse {
+  id: number;
   symbol: SymbolType;
   type: OrderType;
   side: OrderSide;

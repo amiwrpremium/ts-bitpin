@@ -681,8 +681,8 @@ export class Client {
   public async cancelOrder(
     params: t.ICancelOrderParams,
     kwargs?: t.IRequestOptions,
-  ): Promise<t.IOrderStatusResponse> {
-    return await this.delete(
+  ): Promise<undefined> {
+    return await this.delete<undefined>(
       `odr/orders/${params.order_id}/`,
       true,
       this.apiVersion1,
