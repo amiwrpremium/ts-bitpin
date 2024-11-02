@@ -13,3 +13,4 @@
 export { Client } from './client';
 export * as enums from './enums';
 export * as types from './types';
+export { APIError, RequestError } from './exceptions';
